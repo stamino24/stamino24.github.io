@@ -1,0 +1,61 @@
+/* Hero */
+#hero{
+    width: 100%;
+}
+
+#hero .hero-title{
+    text-align: center;
+}
+
+#hero .hero-title h2{
+    color: #a5a5a5;
+}
+
+#hero .info{
+    margin: auto;
+    width: min(900px, 90%);
+    margin-top: 40px;
+    padding: 40px;
+    border-radius: 18px;
+
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(10px);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+
+    box-shadow: 0 10px 40px rgba(0,0,0,0.4);
+}
+
+@media screen and (max-width: 700px){
+    #hero{
+        flex-direction: column;
+    }
+}
+
+#hero h3{
+    font-size: 28px;
+    font-weight: 600;
+    text-align: right;
+}
+
+/* Hover animation */
+
+#hero h3:hover{
+    transform: scale(1.05);
+    transition: 0.2s;
+}
+
+
+/* Downloads */
+
+#downloads{
+    margin-top: 20px;
+}
+
+#downloads a{
+    font-size: larger;
+    font-weight: 600;
+}

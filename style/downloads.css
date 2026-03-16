@@ -1,0 +1,38 @@
+/* Links */
+#links{
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    gap: 20px;
+    width: 70%;
+    max-width: 1000px;
+}
+
+.link{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 30px;
+    border-radius: 30px;
+    background-color: #ffffff2c;
+    backdrop-filter: blur(10px);
+}
+
+.link img{
+    margin: 0 10px;
+    max-width: 50px;
+    transition: all 0.3s;
+}
+
+.link img:hover{
+    scale: 1.1;
+}
+
+/* utils */
+.justify-left{
+    justify-content: start;
+}
+
+.justify-right{
+    justify-content: end;
+}

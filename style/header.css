@@ -1,0 +1,111 @@
+/* Header sticky */
+header {
+  position: sticky;
+  display: flex;
+  justify-content: center;
+  top: 0;
+  margin-bottom: 50px;
+  width: 100%;
+  z-index: 1000;
+}
+
+/* Navbar */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background: linear-gradient(90deg, #161547e6, #1c1d35e6);
+  border-radius: 0;
+  max-width: 1200px;
+  width: 100%;
+}
+
+/* Hamburger */
+#hamburger-div {
+  display: flex;
+}
+#hamburger {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+/* Menu */
+#menu {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  max-height: 0;
+  width: 100%;
+  overflow: hidden;
+  background: linear-gradient(90deg, #161547e6, #1c1d35e6);
+  transition: all 0.2s;
+}
+#menu li {
+    display: inline;
+    padding: 15px 30px;
+    border-top: 1px solid rgba(255,255,255,0.2);
+}
+
+#menu li a {
+    position: relative;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+#menu a::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: white;
+    transition: all 0.2s;
+}
+
+#menu a:hover::before{
+    width: 100%;
+}
+
+/* Menu aperto */
+#menu.open {
+  max-height: 500px; /* sufficiente per mostrare tutti i link */
+}
+
+/* Desktop: menu sempre visibile */
+@media(min-width:768px){
+    nav{
+        justify-content: center;
+        border-radius: 0 0 30px 30px;
+    }
+
+    #hamburger-div {
+        display: none;
+    }
+
+    #menu {
+        position: static;
+        flex-direction: row;
+        max-height: none;
+        background: none;
+        backdrop-filter: none;
+    }
+
+    #menu li {
+        border: none;
+    }
+
+    #menu li a {
+        padding: 10px 15px;
+    }
+
+    #menu a::before{
+        bottom: 0px;
+    }
+}
