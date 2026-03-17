@@ -1,5 +1,8 @@
 document.addEventListener("DOMContentLoaded", async ()=>{
-    const response = await fetch(" https://854b-151-59-82-154.ngrok-free.app/stats/active_users&schools");
+    const response = await fetch("https://b3d2-151-59-83-160.ngrok-free.app/stats/active_users_and_schools", {
+        method: "get",
+        headers: {"Content-Type": "application/json"}
+    });
     const data = await response.json();
     console.log(data)
     const students_label = document.getElementById("active_users");
