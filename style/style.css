@@ -1,43 +1,66 @@
-/* Utils */
-@font-face {
-    font-family: "CaveatBrush";
-    src: url("/font/CaveatBrush-Regular.ttf") format("truetype");
+/* Reset base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #fff;
 }
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    user-select: none;
+.courier, h1, h2, h3{
+  font-family: 'Courier New', Courier, monospace;
 }
 
 body{
-    min-height: 100svh;
-    background: linear-gradient(135deg, #050505, #0a1f44, #123b8a);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(135deg, #01091f, #141930, #01091f);
+  min-height: 100vh;
 }
 
-.coursive{
-    font-family: "CaveatBrush", cursive;
+section{
+  margin-top: 40px;
+  max-width: 1200px;
+  width: 90%;
+  padding: 10px;
 }
 
-/* Footer */
-footer{
-    margin-top: auto;
-    padding: 20px;
-    text-align: left;
-    width: 100%;
-    max-width: 1200px;
-    font-size: 14px;
-    opacity: 0.6;
+
+/* Link button */
+.link{
+    padding: 12px 30px;
+    border-radius: 12px;
+    border: none;
+    background: linear-gradient(135deg, rgba(40,167,69,0.9), rgba(30,126,52,0.9));
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+    backdrop-filter: blur(2px);
+    transition: all 0.3s ease;
+}
+
+.link:hover {
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    transform: translateY(-2px);
+}
+
+.link:active {
+    transform: translateY(1px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+
+/* Grid system */
+.col{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 @media screen and (max-width: 768px){
-    footer{
-        width: 70%;
-    }
+  .nomobile{display: none;}
+  section{width: 80%;}
 }

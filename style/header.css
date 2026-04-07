@@ -4,7 +4,6 @@ header {
   display: flex;
   justify-content: center;
   top: 0;
-  margin-bottom: 50px;
   width: 100%;
   z-index: 1000;
 }
@@ -44,7 +43,7 @@ nav {
   width: 100%;
   overflow: hidden;
   background: linear-gradient(90deg, #161547e6, #1c1d35e6);
-  transition: all 0.2s;
+  transition: max-height 0.2s;
 }
 #menu li {
     display: inline;

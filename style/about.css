@@ -1,0 +1,36 @@
+#about .about-cards{
+    display: flex;
+    margin-top: 10px;
+}
+
+#about .col{
+    display: flex;
+    width: 50%;
+}
+
+#about img{
+    width: 100%;
+    max-width: 300px;
+    margin: 20px auto;
+    border-radius: 50%;
+    border: 2px solid lightblue;
+}
+
+#about .text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+
+@media screen and (max-width:768px){
+    #about .about-cards{
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    #about .col{
+        width: 100%;
+    }
+}

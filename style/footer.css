@@ -1,0 +1,39 @@
+footer{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    max-width: 1200px;
+    text-align: center;
+}
+
+footer *{
+    color: #ffffffb0;
+}
+
+footer h5{
+    color: white;
+}
+
+footer .lists{
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+}
+
+footer .lists ul{
+    padding: 5px;
+    list-style-type: none;
+}
+
+footer .lists ul li{
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+
+@media screen and (max-width: 768px){
+    footer{
+        width: 80%;  
+    }
+}
