@@ -1,7 +1,10 @@
 footer{
+    flex: 1;
+    bottom: 0;
     padding: 20px;
     display: flex;
     flex-direction: column;
+    justify-content: end;
     width: 90%;
     max-width: 1200px;
     text-align: center;

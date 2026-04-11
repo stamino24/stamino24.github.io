@@ -1,4 +1,4 @@
-#about .about-cards{
+#about .about_cards{
     display: flex;
     margin-top: 10px;
 }
@@ -8,12 +8,17 @@
     width: 50%;
 }
 
+#about .col100{
+    display: flex;
+    width: 100%;
+}
 #about img{
     width: 100%;
     max-width: 300px;
     margin: 20px auto;
     border-radius: 50%;
     border: 2px solid lightblue;
+    transition: all 0.3s ease;
 }
 
 #about .text{
@@ -25,7 +30,7 @@
 
 
 @media screen and (max-width:768px){
-    #about .about-cards{
+    #about .about_cards{
         flex-direction: column;
         flex-wrap: wrap;
     }

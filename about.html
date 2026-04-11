@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Birolini Stefano</title>
+
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/header.css">
+    <link rel="stylesheet" href="style/hero.css">
+    <link rel="stylesheet" href="style/about.css">
+    <link rel="stylesheet" href="style/cards_manager.css">
+    <link rel="stylesheet" href="style/footer.css">
+    <link rel="stylesheet" href="style/cookie.css">
+
+    <script src="script/cookie_manager.js"></script>
+    <script src="script/hamburger.js"></script>
+    <script src="script/general_gsap.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div id="hamburger-div">
+                <img src="assets/hamburger_menu.svg" alt="hamburger menu" id="hamburger">
+            </div>
+            <ul id="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="progetti.html">Progetti</a></li>
+                <li><a href="contatti.html">Contatti</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="hero">
+        <h1 class="logo">About me</h1>
+        <h3 class="hero_claim">Qui puoi trovare altre informazioni utili riguardo a me</h3>
+    </section>
+
+    <section id="about">
+        <div class="about_cards" style="flex-direction: column; gap: 50px">
+            <div class="col100 text">
+                <h3>Chi sono</h3>
+                <p></p>
+            </div>
+
+            <div class="col100 text">
+                <h3>La mia esperienza</h3>
+                <div class="cards_container" style="grid-template-columns: 1fr;">
+                    <div class="card">
+                        <h4>BTecno - Leffe(BG)</h4>
+                        <p><i>09 Giugno 2025 - 20 Giugno 2025</i></p>
+                        <p>Esperienza di PCTO organizzata dalla scuola superiore di secondo grado che ho frequentato.</p>
+                        <p>Sono stato affiancato dai programmatori di BTecno, ho avuto la possibilità di immergermi in un vero posto di lavoro in cui ho appreso tecnologie utilizzate attualmente come il framework Fastify.</p>
+                    </div>
+                    <div class="card">
+                        <h4>Servisource Healtcare Training - Dundalk (Irlanda)</h4>
+                        <p><i>09 Settembre 2024 - 13 Settembre 2024</i></p>
+                        <p>Periodo PCTO </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col100 text">
+                <h3>Le mie conoscenze</h3>
+                <div class="cards_container" style="grid-template-columns: 1fr;">
+                    <div class="card">
+                        <h4>Frontend</h4>
+                        <p>Sono in grado di lavorare con tecnologie web semplici come HTML, CSS e JavaScript.</p>
+                        <p>Sto affinando le mie competenze seguendo percorsi di studio su framework più potenti come React e Bootstrap.</p>
+                    </div>
+                    <div class="card">
+                        <h4>Backend</h4>
+                        <p>Uso Node.JS con librerie come Express per creare API.</p>
+                        <p>Conosco librerie come Jsonwebtoken, Argon2, dotenv e altre.</p>
+                        <p>Oltre a Node ho avuto esperienza con PHP e con Python Flask e FastAPI.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="lists">
+            <div>
+                <ul>
+                    <h5>Info</h5>
+                    <li><a href="">Coockie Policy</a></li>
+                    <li><a href="">Privacy Policy</a></li>
+                    <li><a href="">Termini di servizio</a></li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <h5>Contatti</h5>
+                    <li>Mail: birolinistefano@synctech.com</li>
+                    <li>Telefono: <i>Non disponibile</i></li>
+                </ul>
+            </div>
+        </div>
+        <h5>Copyright &copy; 2026</h5>
+    </footer> 
+</body>
+</html>

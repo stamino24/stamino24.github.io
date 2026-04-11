@@ -1,4 +1,4 @@
-#knowledges .knowledges-cards{
+.cards_container{
     width: 100%;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -7,7 +7,7 @@
     justify-content: space-between;
 }
 
-#knowledges .card{
+.card{
     display: flex;
     flex-direction: column;
     margin-top: 10px;
@@ -19,13 +19,17 @@
     transition: all 0.2s;
 }
 
-#knowledges .card:hover{
+.card:hover{
     transform: translateY(-5px);
     box-shadow: 2px 3px 3px #00000093
 }
 
+.link{
+    width: fit-content;
+}
+
 @media screen and (max-width: 768px){
-    #knowledges .knowledges-cards{
+    .cards_container{
         display: flex;
         flex-direction: column;
         gap: 20px;
