@@ -1,9 +1,10 @@
 #cookie_banner {
-    position: absolute;
+    position: fixed;
     background-color: white;
     border-radius: 5px;
-    bottom: 40px;
-    right: 40px;
+    bottom: 2vh;
+    right: 2vw;
+    margin-left: 2vw;
     padding: 10px 15px;
     max-width: 500px;
 }
@@ -28,4 +29,10 @@
     right: 10px;
     font-size: 24px;
     cursor: pointer;
+}
+
+@media screen and(max-width: 768px){
+    #cookie_banner{
+        margin: auto;
+    }
 }

@@ -37,6 +37,6 @@ footer .lists ul li{
 
 @media screen and (max-width: 768px){
     footer{
-        width: 80%;  
+        width: 100%;  
     }
 }

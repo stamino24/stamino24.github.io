@@ -14,6 +14,7 @@ document.addEventListener("gsap_end", async () => {
         showBanner();
     } else {
         showCookieIcon();
+        loadAnalytics();
     }
 });
 
@@ -50,7 +51,7 @@ async function acceptCookies() {
     if (cookie_banner) cookie_banner.remove();
     showCookieIcon();
 
-    /* load google analytics */
+    loadAnalytics();
 }
 
 async function denyCookies() {
@@ -81,4 +82,23 @@ function showCookieIcon() {
     });
 
     document.body.appendChild(icon);
+}
+
+
+function loadAnalytics() {
+    if (window.gtagLoaded) return;
+    window.gtagLoaded = true;
+
+    const script = document.createElement("script");
+    script.async = true;
+    script.src = "https://www.googletagmanager.com/gtag/js?id=G-BJEDLGKEGH";
+    document.head.appendChild(script);
+
+    window.dataLayer = window.dataLayer || [];
+    window.gtag = function(){ dataLayer.push(arguments); };
+
+    gtag('js', new Date());
+    gtag('config', 'G-BJEDLGKEGH',{
+        anonymize_ip: true
+    });
 }
