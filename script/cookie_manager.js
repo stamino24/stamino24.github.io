@@ -26,7 +26,7 @@ function showBanner() {
 
     cookie_banner.innerHTML = `
         <h3>Noi teniamo alla tua privacy</h3>
-        <p>Accetti i cookie e i termini di servizio espressi nella nostro documento sulla <a href="${"cookie.html"}">Cookie Policy</a> ?</p>
+        <p>Accetti i cookie e i termini di servizio espressi nella nostro documento sulla <a href="${"informativa.html#cookie-policy"}">Cookie Policy</a> ?</p>
         <button id="accept_cookie">Accetto</button>
         <button id="deny_cookie">Non accetto</button>
     `;
