@@ -1,41 +1,57 @@
-#about .about_cards{
+#about .about_cards {
     display: flex;
-    margin-top: 10px;
+    align-items: stretch;
+    gap: clamp(1.3rem, 4vw, 3.25rem);
 }
 
-#about .col{
+#about .col {
     display: flex;
     width: 50%;
 }
 
-#about .col100{
+#about .col100 {
     display: flex;
     width: 100%;
 }
-#about img{
-    width: 100%;
-    max-width: 300px;
-    margin: 20px auto;
-    border-radius: 50%;
-    border: 2px solid lightblue;
-    transition: all 0.3s ease;
+
+#about img {
+    width: min(100%, 350px);
+    aspect-ratio: 1;
+    object-fit: cover;
+    margin: auto;
+    padding: 7px;
+    border: 1px solid rgba(85, 214, 194, 0.36);
+    border-radius: 28px;
+    background: rgba(85, 214, 194, 0.08);
+    box-shadow: 0 22px 48px rgba(0, 0, 0, 0.3);
 }
 
-#about .text{
+#about .text {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 10px;
+    gap: 1rem;
 }
 
+#about .text p {
+    font-size: 1rem;
+}
 
-@media screen and (max-width:768px){
-    #about .about_cards{
+#about .stacked-content {
+    flex-direction: column;
+    gap: 3rem;
+}
+
+#about .single-column {
+    grid-template-columns: 1fr;
+}
+
+@media screen and (max-width: 768px) {
+    #about .about_cards {
         flex-direction: column;
-        flex-wrap: wrap;
     }
 
-    #about .col{
+    #about .col {
         width: 100%;
     }
 }

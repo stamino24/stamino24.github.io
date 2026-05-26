@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,8 +13,8 @@
 
     <script src="script/cookie_manager.js"></script>
     <script src="script/hamburger.js"></script>
-    <script src="script/general_gsap.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
+    <script src="script/general_gsap.js"></script>
 </head>
 <body>
     <header>
@@ -26,7 +26,7 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="progetti.html">Progetti</a></li>
-                <li><a href="contatti.html">Contatti</a></li>
+                <li><a href="contatti.html" aria-current="page">Contatti</a></li>
             </ul>
         </nav>
     </header>
@@ -36,15 +36,15 @@
         <h3 class="hero_claim">Ecco i modi in cui puoi contattarmi</h3>
     </section>
 
-    <section id="contacts" style="display: flex; flex-direction: column; gap: 20px;">
-        <div>
-            <h3>Email:</h3>
-            <p><i>birolinistefano07@icloud.com</i></p>
-            <p><i>birolinistefano07@gmail.com</i></p>
+    <section id="contacts">
+        <div class="contact-card">
+            <h3>Email</h3>
+            <a href="mailto:birolinistefano07@icloud.com">birolinistefano07@icloud.com</a>
+            <a href="mailto:birolinistefano07@gmail.com">birolinistefano07@gmail.com</a>
         </div>
-        <div>
-            <h3>Telefono:</h3>
-            <p><i>+39 351 8229771</i></p>
+        <div class="contact-card">
+            <h3>Telefono</h3>
+            <a href="tel:+393518229771">+39 351 8229771</a>
         </div>
     </section>
 
@@ -53,7 +53,7 @@
             <div>
                 <ul>
                     <h5>Info</h5>
-                    <li><a href="informativa.html#cookie-policy">Coockie Policy</a></li>
+                    <li><a href="informativa.html#cookie-policy">Cookie Policy</a></li>
                     <li><a href="informativa.html#privacy-policy">Privacy Policy</a></li>
                     <li><a href="informativa.html#terms-and-conditions">Termini di servizio</a></li>
                 </ul>

@@ -1,110 +1,121 @@
-/* Header sticky */
 header {
   position: sticky;
+  top: 0;
+  z-index: 1000;
   display: flex;
   justify-content: center;
-  top: 0;
   width: 100%;
-  z-index: 1000;
+  padding: 1rem 1rem 0;
 }
 
-/* Navbar */
 nav {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 20px;
-  background: linear-gradient(90deg, #161547e6, #1c1d35e6);
-  border-radius: 0;
-  max-width: 1200px;
-  width: 100%;
+  width: min(1120px, 100%);
+  min-height: 64px;
+  padding: 0.55rem 0.7rem 0.55rem 1.25rem;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: rgba(10, 16, 31, 0.72);
+  box-shadow: 0 14px 38px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(18px);
 }
 
-/* Hamburger */
+nav::before {
+  content: "SB.";
+  color: var(--text);
+  font-size: 1.15rem;
+  font-weight: 750;
+  letter-spacing: -0.05em;
+}
+
 #hamburger-div {
   display: flex;
+  order: 2;
+  padding: 0.45rem;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.06);
 }
+
 #hamburger {
-  width: 30px;
-  height: 30px;
+  width: 25px;
+  height: 25px;
   cursor: pointer;
 }
 
-/* Menu */
 #menu {
-  list-style: none;
+  position: absolute;
+  top: calc(100% + 0.55rem);
+  left: 0;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  max-height: 0;
   width: 100%;
+  max-height: 0;
   overflow: hidden;
-  background: linear-gradient(90deg, #161547e6, #1c1d35e6);
-  transition: max-height 0.2s;
+  list-style: none;
+  border-radius: 20px;
+  background: #10192e;
+  box-shadow: var(--shadow);
+  transition: max-height 0.25s ease;
 }
+
 #menu li {
-    display: inline;
-    padding: 15px 30px;
-    border-top: 1px solid rgba(255,255,255,0.2);
+  padding: 0 0.55rem;
+}
+
+#menu li + li {
+  border-top: 1px solid var(--line);
 }
 
 #menu li a {
-    position: relative;
-    text-decoration: none;
-    color: #ffffff;
+  display: block;
+  padding: 0.9rem 1rem;
+  border-radius: 999px;
+  color: var(--muted);
+  text-decoration: none;
+  font-size: 0.96rem;
+  font-weight: 500;
+  transition: color 0.2s ease, background 0.2s ease;
 }
 
-#menu a::before{
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 0;
-    height: 1px;
-    background-color: white;
-    transition: all 0.2s;
+#menu li a:hover,
+#menu li a[aria-current="page"] {
+  color: var(--text);
+  background: rgba(85, 214, 194, 0.12);
 }
 
-#menu a:hover::before{
-    width: 100%;
-}
-
-/* Menu aperto */
 #menu.open {
-  max-height: 500px; /* sufficiente per mostrare tutti i link */
+  max-height: 320px;
+  padding: 0.55rem;
 }
 
-/* Desktop: menu sempre visibile */
-@media(min-width:768px){
-    nav{
-        justify-content: center;
-        border-radius: 0 0 30px 30px;
-    }
+@media (min-width: 768px) {
+  nav {
+    padding: 0.45rem 0.55rem 0.45rem 1.55rem;
+  }
 
-    #hamburger-div {
-        display: none;
-    }
+  #hamburger-div {
+    display: none;
+  }
 
-    #menu {
-        position: static;
-        flex-direction: row;
-        max-height: none;
-        background: none;
-        backdrop-filter: none;
-    }
+  #menu {
+    position: static;
+    flex-direction: row;
+    width: auto;
+    max-height: none;
+    overflow: visible;
+    border-radius: 0;
+    background: transparent;
+    box-shadow: none;
+  }
 
-    #menu li {
-        border: none;
-    }
+  #menu li + li {
+    border: none;
+  }
 
-    #menu li a {
-        padding: 10px 15px;
-    }
-
-    #menu a::before{
-        bottom: 0px;
-    }
+  #menu li a {
+    padding: 0.65rem 1.05rem;
+  }
 }

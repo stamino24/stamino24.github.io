@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 
 <head>
     <meta charset="UTF-8">
@@ -16,8 +16,8 @@
 
     <script src="script/cookie_manager.js"></script>
     <script src="script/hamburger.js"></script>
-    <script src="script/general_gsap.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
+    <script src="script/general_gsap.js"></script>
 </head>
 
 <body>
@@ -30,7 +30,7 @@
             <ul id="menu">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
-                <li><a href="progetti.html">Progetti</a></li>
+                <li><a href="progetti.html" aria-current="page">Progetti</a></li>
                 <li><a href="contatti.html">Contatti</a></li>
             </ul>
         </nav>
@@ -43,8 +43,8 @@
 
     <section id="projects">
         <div class="cards_container">
-            <div style="display: flex; flex-direction: row; align-items: center; border: transparent;">
-                <img src="assets/nothing_here.png" alt="" width="100px">
+            <div class="empty-state">
+                <img src="assets/nothing_here.png" alt="">
                 <h4>Purtroppo non abbiamo trovato niente...</h4>
             </div>
         </div>
@@ -55,7 +55,7 @@
             <div>
                 <ul>
                     <h5>Info</h5>
-                    <li><a href="informativa.html#cookie-policy">Coockie Policy</a></li>
+                    <li><a href="informativa.html#cookie-policy">Cookie Policy</a></li>
                     <li><a href="informativa.html#privacy-policy">Privacy Policy</a></li>
                     <li><a href="informativa.html#terms-and-conditions">Termini di servizio</a></li>
                 </ul>

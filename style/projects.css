@@ -1,7 +1,37 @@
-#projects .cards_container{
-    width: 100%;
-    max-width: 1000px;
-    margin: auto;
+#projects .cards_container {
     display: flex;
     flex-direction: column;
+    width: 100%;
+    margin: 0;
+}
+
+#projects .empty-state {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: clamp(1rem, 5vw, 2rem);
+    min-height: 230px;
+    padding: 2rem;
+    border: 1px dashed rgba(150, 180, 226, 0.28);
+    border-radius: 18px;
+    text-align: center;
+}
+
+#projects .empty-state img {
+    width: clamp(82px, 13vw, 108px);
+    height: auto;
+    opacity: 0.85;
+}
+
+#projects .empty-state h4 {
+    max-width: 340px;
+    color: var(--muted);
+    font-size: clamp(1rem, 2vw, 1.14rem);
+    font-weight: 500;
+}
+
+@media screen and (max-width: 520px) {
+    #projects .empty-state {
+        flex-direction: column;
+    }
 }
