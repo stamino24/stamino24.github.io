@@ -1,15 +1,15 @@
 :root {
-  --bg: #ffffff;
-  --bg-soft: #f6f6f4;
-  --surface: #ffffff;
+  --bg: #0d0f12;
+  --bg-soft: #15181d;
+  --surface: #11151a;
   --surface-strong: #f15a24;
-  --line: rgba(17, 17, 17, 0.14);
-  --text: #111111;
-  --muted: #3f3f3f;
+  --line: rgba(255, 255, 255, 0.12);
+  --text: #f4f6f8;
+  --muted: #b8c0c8;
   --accent: #f15a24;
-  --accent-strong: #c93f12;
-  --accent-glow: rgba(241, 90, 36, 0.22);
-  --shadow: 0 18px 42px rgba(17, 17, 17, 0.1);
+  --accent-strong: #ff7a3d;
+  --accent-glow: rgba(241, 90, 36, 0.3);
+  --shadow: 0 18px 42px rgba(0, 0, 0, 0.34);
   --radius: 16px;
 }
 
@@ -141,7 +141,7 @@ section {
   margin-top: 0.65rem;
   padding: 0.8rem 1.3rem;
   border-radius: 999px;
-  color: #04141a;
+  color: #101216;
   background: var(--accent);
   font-size: 0.96rem;
   font-weight: 700;

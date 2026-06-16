@@ -18,8 +18,8 @@ nav {
   padding: 0.55rem 0.7rem 0.55rem 1.25rem;
   border: 1px solid var(--line);
   border-radius: 999px;
-  background: rgba(255, 255, 255, 0.92);
-  box-shadow: 0 14px 38px rgba(17, 17, 17, 0.12);
+  background: rgba(17, 21, 26, 0.92);
+  box-shadow: 0 14px 38px rgba(0, 0, 0, 0.34);
   backdrop-filter: blur(18px);
 }
 
@@ -83,7 +83,7 @@ nav::before {
 #menu li a:hover,
 #menu li a[aria-current="page"] {
   color: var(--text);
-  background: rgba(241, 90, 36, 0.14);
+  background: rgba(241, 90, 36, 0.18);
 }
 
 #menu.open {
