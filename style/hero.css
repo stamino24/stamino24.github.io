@@ -6,28 +6,15 @@
 }
 
 #hero::before {
-    content: "PORTFOLIO / DEVELOPER";
-    display: block;
-    width: fit-content;
-    margin-bottom: 1.35rem;
-    padding: 0.38rem 0.8rem;
-    border: 1px solid rgba(85, 214, 194, 0.3);
-    border-radius: 999px;
-    color: var(--accent);
-    font-size: 0.72rem;
-    font-weight: 650;
-    letter-spacing: 0.17em;
+    content: none;
 }
 
 #hero .logo {
     max-width: 850px;
     font-size: clamp(3.2rem, 9.5vw, 6.8rem);
     font-weight: 720;
-    letter-spacing: -0.075em;
+    letter-spacing: 0;
     line-height: 0.95;
-    background: linear-gradient(110deg, #ffffff 18%, #c5d8ed 55%, #55d6c2);
-    background-clip: text;
-    color: transparent;
 }
 
 #hero .hero_claim {
@@ -37,5 +24,5 @@
     font-size: clamp(1rem, 2.2vw, 1.25rem);
     font-weight: 450;
     line-height: 1.6;
-    letter-spacing: -0.015em;
+    letter-spacing: 0;
 }

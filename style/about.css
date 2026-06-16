@@ -20,10 +20,10 @@
     object-fit: cover;
     margin: auto;
     padding: 7px;
-    border: 1px solid rgba(85, 214, 194, 0.36);
+    border: 1px solid rgba(241, 90, 36, 0.42);
     border-radius: 28px;
-    background: rgba(85, 214, 194, 0.08);
-    box-shadow: 0 22px 48px rgba(0, 0, 0, 0.3);
+    background: rgba(241, 90, 36, 0.1);
+    box-shadow: 0 22px 48px rgba(17, 17, 17, 0.12);
 }
 
 #about .text {

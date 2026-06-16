@@ -12,7 +12,7 @@
     gap: clamp(1rem, 5vw, 2rem);
     min-height: 230px;
     padding: 2rem;
-    border: 1px dashed rgba(150, 180, 226, 0.28);
+    border: 1px dashed rgba(17, 17, 17, 0.28);
     border-radius: 18px;
     text-align: center;
 }
